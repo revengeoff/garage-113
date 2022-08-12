@@ -307,8 +307,24 @@ a:hover {
   padding-top: 45px;
 }
 
-.popup-menu {
+.popup {
   position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+.popup__show {
+  visibility: visible;
+  opacity: 1;
+}
+.popup-main {
+  position: absolute;
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
@@ -318,20 +334,14 @@ a:hover {
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
-  visibility: hidden;
-  opacity: 0;
   transition: all 280ms ease 0ms;
   padding: 35px 19px 0 37px;
   z-index: 200;
 }
-.popup-menu svg {
+.popup-main svg {
   z-index: 1;
 }
-.popup-menu.popup-menu_show {
-  visibility: visible;
-  opacity: 1;
-}
-.popup-menu__close-btn {
+.popup-main__close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -339,41 +349,41 @@ a:hover {
   height: 30px;
   background: transparent;
 }
-.popup-menu__close-btn:hover svg rect {
+.popup-main__close-btn:hover svg rect {
   transition: all 280ms ease 0ms;
   fill: #1a1a1a;
 }
-.popup-menu__image-car, .popup-menu__image-brake {
+.popup-main__image-car, .popup-main__image-brake {
   position: absolute;
 }
-.popup-menu__image-car {
+.popup-main__image-car {
   top: 59px;
   right: 19px;
 }
-.popup-menu__image-brake {
+.popup-main__image-brake {
   right: 0;
   bottom: 0;
 }
-.popup-menu__title {
+.popup-main__title {
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
   margin: 58px 0 31px;
 }
-.popup-menu__form {
+.popup-main__form {
   display: flex;
   flex-direction: column;
 }
-.popup-menu__form p {
+.popup-main__form p {
   color: #0E0F28;
   font-size: 10px;
   max-width: 275px;
   line-height: 150%;
 }
-.popup-menu__form-desc {
+.popup-main__form-desc {
   margin-bottom: 10px;
 }
-.popup-menu__date, .popup-menu__phone {
+.popup-main__date, .popup-main__phone {
   width: 343px;
   height: 55px;
   background: rgba(14, 15, 40, 0.05);
@@ -381,18 +391,18 @@ a:hover {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.popup-menu__checkbox {
+.popup-main__checkbox {
   display: flex;
   align-items: center;
 }
-.popup-menu__checkbox a {
+.popup-main__checkbox a {
   color: #FF1A3B;
   text-decoration: underline;
 }
-.popup-menu__policy {
+.popup-main__policy {
   margin-right: 5px;
 }
-.popup-menu__btn {
+.popup-main__btn {
   max-width: 174px;
   padding: 10px 15px;
   margin-top: 33px;

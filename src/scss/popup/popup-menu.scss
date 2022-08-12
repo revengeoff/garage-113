@@ -1,111 +1,123 @@
-.popup-menu {
+.popup {
   position: fixed;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 480px;
-  height: 560px;
-  background: linear-gradient(180deg, #ffffff 0%, #efefef 100%);
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);
   visibility: hidden;
   opacity: 0;
-  transition: $standartTrans;
-  padding: 35px 19px 0 37px;
-  z-index: 200;
 
-  svg {
-    z-index: 1;
-  }
-
-  &.popup-menu_show {
+  &__show {
     visibility: visible;
     opacity: 1;
   }
-  &__close-btn {
+
+  &-main {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    &:hover {
-      & svg {
-        & rect {
-          transition: $standartTrans;
-          fill: #1a1a1a;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 480px;
+    height: 560px;
+    background: linear-gradient(180deg, #ffffff 0%, #efefef 100%);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    transition: $standartTrans;
+    padding: 35px 19px 0 37px;
+    z-index: 200;
+
+    svg {
+      z-index: 1;
+    }
+    &__close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      &:hover {
+        & svg {
+          & rect {
+            transition: $standartTrans;
+            fill: #1a1a1a;
+          }
         }
       }
     }
-  }
 
-  &__image-car, &__image-brake {
-    position: absolute;
-  }
-
-  &__image-car {
-    top: 59px;
-    right: 19px;
-  }
-
-  &__image-brake {
-    right: 0;
-    bottom: 0;
-  }
-  &__title {
-    font-weight: 700;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin: 58px 0 31px;
-  }
-  &__form {
-    display: flex;
-    flex-direction: column;
-    p {
-      color: $corbeauColor;
-      font-size: 10px;
-      max-width: 275px;
-      line-height: 150%;
+    &__image-car,
+    &__image-brake {
+      position: absolute;
     }
-  }
-  &__form-desc {
-    margin-bottom: 10px;
-  }
-  &__date,
-  &__phone {
-    width: 343px;
-    height: 55px;
-    background: rgba(14, 15, 40, 0.05);
-    border: 1px solid #0e0f28;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
 
-  &__date {
-  }
-  &__phone {
-  }
-  &__checkbox {
-    display: flex;
-    align-items: center;
-
-    a {
-      color: $redColor;
-      text-decoration: underline;
+    &__image-car {
+      top: 59px;
+      right: 19px;
     }
-  }
-  &__policy {
-    margin-right: 5px;
-  }
-  &__btn {
-    max-width: 174px;
-    padding: 10px 15px;
-    margin-top: 33px;
-    font-weight: 700;
-    font-size: 16px;
-    color: $whiteColor;
-    background-color: $redColor;
-    border-radius: 5px;
+
+    &__image-brake {
+      right: 0;
+      bottom: 0;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin: 58px 0 31px;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      p {
+        color: $corbeauColor;
+        font-size: 10px;
+        max-width: 275px;
+        line-height: 150%;
+      }
+    }
+    &__form-desc {
+      margin-bottom: 10px;
+    }
+    &__date,
+    &__phone {
+      width: 343px;
+      height: 55px;
+      background: rgba(14, 15, 40, 0.05);
+      border: 1px solid #0e0f28;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    &__date {
+    }
+    &__phone {
+    }
+    &__checkbox {
+      display: flex;
+      align-items: center;
+
+      a {
+        color: $redColor;
+        text-decoration: underline;
+      }
+    }
+    &__policy {
+      margin-right: 5px;
+    }
+    &__btn {
+      max-width: 174px;
+      padding: 10px 15px;
+      margin-top: 33px;
+      font-weight: 700;
+      font-size: 16px;
+      color: $whiteColor;
+      background-color: $redColor;
+      border-radius: 5px;
+    }
   }
 }
