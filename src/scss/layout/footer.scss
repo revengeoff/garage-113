@@ -1,0 +1,115 @@
+.footer {
+  &__bg {
+    background: linear-gradient(180deg, #0e0f28 0%, #060716 100%);
+  }
+  &__brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  &__content {
+    display: flex;
+    padding: 39px 0 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 167px;
+    max-width: 598px;
+    max-height: 61px;
+  }
+
+  &__geo,
+  &__phones,
+  &__clock,
+  &__mail {
+    display: flex;
+    color: $whiteColor;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  &__geo,
+  &__phones,
+  &__clock {
+    text-transform: uppercase;
+  }
+
+  &__geo,
+  &__phone,
+  &__clock,
+  &__mail {
+    align-items: center;
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__geo {
+    margin-bottom: 16px;
+  }
+  &__phone {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &__phones {
+    display: flex;
+    flex-direction: column;
+
+    a:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+  &__clock {
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+    gap: 91px;
+    margin-left: 203px;
+  }
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__nav-item {
+    color: $whiteColor;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  &__nav-link {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__info {
+    padding: 20px 0 24px;
+  }
+  &__desc,
+  &__copyright,
+  &__right {
+    color: $whiteColor;
+    font-size: 12px;
+  }
+  &__desc {
+    margin-bottom: 20px;
+  }
+  &__right {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__copyright {
+    font-weight: 700;
+  }
+}
+.logo-white {
+  padding-top: 45px;
+}
