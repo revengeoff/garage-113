@@ -158,6 +158,10 @@ a:hover {
   color: #FF1A3B;
 }
 
+picture {
+  z-index: 1;
+}
+
 .header__top,
 .header__column,
 .header__clock,
@@ -476,7 +480,7 @@ a:hover {
 
 .hero__image img {
   padding-top: 10px;
-  z-index: 1;
+  z-index: 5;
 }
 
 .hero__image-bg {
