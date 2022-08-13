@@ -1,0 +1,62 @@
+.hero {
+  margin-bottom: 60px;
+
+  &__container {
+  }
+  &__content {
+    position: relative;
+    display: flex;
+  }
+  &__text {
+  }
+  &__title {
+    position: relative;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: $corbeauColor;
+    margin: 89px 0 74px;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      content: "";
+      width: 80px;
+      height: 5px;
+      background-color: $redColor;
+    }
+  }
+  &__desc {
+    line-height: 150%;
+    max-width: 780px;
+    span {
+      font-weight: 700;
+      white-space: normal;
+    }
+  }
+  &__image {
+    display: flex;
+
+    img {
+      padding-top: 10px;
+      z-index: 1;
+    }
+  }
+  &__image-bg {
+    position: absolute;
+    right: 50px;
+    bottom: 27px;
+    width: 204px;
+    height: 312px;
+
+    border-radius: 25px;
+    background-color: $redColor;
+    &:after {
+      content: url("../images/icons/113.svg");
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+  }
+}

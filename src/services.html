@@ -1,17 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/head.html', {
-    'title': 'Сервис'
-  })
+  @@include('html/head.html', { 'title': 'Сервис' })
+
   <body>
     <div class="wrapper">
       @@include('html/header.html', {})
+      <div class="hero">
+        <div class="hero__background">
+          <div class="hero__container">
+            <div class="hero__content">
+              <div class="hero__text">
+                <h2 class="hero__title">Наши услуги</h2>
+                <p class="hero__desc">Автотехцентр «Гараж 113» специализируется на обслуживании и ремонте автомобилей японских и корейских брендов в Москве и Московской области. <span>Профессионально
+                    и по выгодной цене выполняем слесарные работы любой сложности.</span></p>
+              </div>
+              <div class="hero__image">
+                <div class="hero__image-bg"></div>
+                <img src="images/hero.png" alt="Мужчина">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <main class="page">
-
+        <div class="our-services">
+          <div class="our-services__container">
+            <div class="our-services__column">
+              <div class="our-services__items">
+                <div class="our-services__item">
+                  <div class="our-services__image">
+                    <img src="/images/services/01.png" alt="" />
+                  </div>
+                  <div class="our-services__desc">Диагностика и <br />ремонт ходовой</div>
+                </div>
+                </a>
+                <a class="our-services__link" href="#">
+                  <div class="our-services__item">
+                    <div class="our-services__image">
+                      <img src="/images/services/02.png" alt="" />
+                    </div>
+                    <div class="our-services__desc">Ремонт и профилактика тормозной системы</div>
+                  </div>
+                </a>
+                <a class="our-services__link" href="#">
+                  <div class="our-services__item">
+                    <div class="our-services__image">
+                      <img src="/images/services/03.png" alt="" />
+                    </div>
+                    <div class="our-services__desc">Полное техническое обслуживание авто</div>
+                  </div>
+                </a>
+                <a class="our-services__link" href="#">
+                  <div class="our-services__item">
+                    <div class="our-services__image">
+                      <img src="/images/services/04.png" alt="" />
+                    </div>
+                    <div class="our-services__desc">Ремонт и диагностика
+                      (промывка) радиаторов</div>
+                  </div>
+                </a>
+                <a class="our-services__link" href="#">
+                  <div class="our-services__item">
+                    <div class="our-services__image">
+                      <img src="/images/services/05.png" alt="" />
+                    </div>
+                    <div class="our-services__desc">Шиномонтаж</div>
+                  </div>
+                </a>
+                <a class="our-services__link" href="#">
+                  <div class="our-services__item">
+                    <div class="our-services__image">
+                      <img src="/images/services/06.png" alt="" />
+                    </div>
+                    <div class="our-services__desc">Ремонт и диагностика
+                      АКПП</div>
+                  </div>
+                </a>
+                <a class="our-services__link" href="#">
+                  <div class="our-services__item">
+                    <div class="our-services__image">
+                      <img src="/images/services/04.png" alt="" />
+                    </div>
+                    <div class="our-services__desc">Ремонт и диагностика
+                      двигателя</div>
+                  </div>
+                </a>
+                <a class="our-services__link" href="#">
+                  <div class="our-services__item">
+                    <div class="our-services__image">
+                      <img src="/images/services/08.png" alt="" />
+                    </div>
+                    <div class="our-services__desc">Заправка и ремонт
+                      кондиционера</div>
+                  </div>
+                </a>
+                <a class="our-services__link" href="#">
+                  <div class="our-services__item">
+                    <div class="our-services__image">
+                      <img src="/images/services/06.png" alt="" />
+                    </div>
+                    <div class="our-services__desc">Запчасти и масла</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       @@include('html/footer.html', {})
     </div>
     @@include('html/popup/popup-menu.html', {})
     <script src="js/app.min.js"></script>
   </body>
+
 </html>
