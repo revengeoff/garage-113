@@ -9,6 +9,7 @@
 
     font-weight: 700;
     font-size: 12px;
+    text-transform: uppercase;
   }
 
   &__bg {
@@ -17,7 +18,7 @@
   }
 
   &__top {
-    padding: 10px 0 8px;
+    padding: 10px 0 5px;
     justify-content: space-between;
     border-bottom: 1px solid rgba(14, 15, 40, 0.15);
   }
@@ -47,6 +48,7 @@
 
 .nav {
   display: flex;
+  padding-left: 8px;
 
   &__list {
     display: flex;
@@ -62,6 +64,7 @@
   }
 
   &__btn {
+    min-width: 158px;
     margin-left: auto;
     padding: 5px 10px;
     color: $whiteColor;
