@@ -118,10 +118,22 @@
   &__btn-red {
     color: $whiteColor;
     background-color: $redColor;
+    border: 1px solid $redColor;
+    transition: background 0.2s, color 0.2s;
+    &:hover {
+      color: $redColor;
+      background-color: transparent;
+    }
   }
   &__btn-white {
     color: $redColor;
     background-color: $whiteColor;
+    border: 1px solid $whiteColor;
+    transition: background 0.2s, color 0.2s;
+    &:hover {
+      color: $whiteColor;
+      background-color: transparent;
+    }
   }
 }
 .services-subtitle {
