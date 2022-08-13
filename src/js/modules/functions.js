@@ -22,7 +22,7 @@ export function windowPopup() {
     popupMain.classList.add("popup__show");
   };
 
-  popupMenu.onclick = (event) => {
+  popupMain.onclick = (event) => {
     const target = event.target;
     const wrapper = target.classList.contains("popup-main");
     const closeBtn = target.closest("button");

@@ -307,6 +307,124 @@ a:hover {
   padding-top: 45px;
 }
 
+.our-services__title, .our-services__link, .our-services__desc {
+  font-weight: 700;
+}
+.our-services__title {
+  position: relative;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #0E0F28;
+  margin: 89px 0 74px;
+}
+.our-services__title:after {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  content: "";
+  width: 80px;
+  height: 5px;
+  background-color: #FF1A3B;
+}
+.our-services__items, .our-services__link, .our-services__item, .our-services__offer-list, .our-services__desc {
+  display: flex;
+}
+.our-services__items {
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.our-services__link {
+  justify-content: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FF1A3B;
+}
+.our-services__link:hover {
+  color: #0E0F28;
+}
+.our-services__item {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 380px;
+  max-height: 284px;
+  padding: 25px 25px;
+  background-color: #F5F5F5;
+}
+.our-services__image {
+  max-width: 330px;
+  max-height: 166px;
+  margin-bottom: 14px;
+}
+.our-services__desc {
+  width: 330px;
+  height: 54px;
+  line-height: 150%;
+  align-items: flex-end;
+  color: #0E0F28;
+}
+.our-services__offer-list {
+  padding-top: 60px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.services-our {
+  display: flex;
+}
+.services-our__item-toyota {
+  max-width: 580px;
+  max-height: 370px;
+  padding: 35px 30px;
+  background-color: #0E0F28;
+}
+.services-our__item-motul {
+  max-width: 580px;
+  max-height: 370px;
+  padding: 35px 30px;
+  background-color: #FF1A3B;
+}
+.services-our__title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.services-our__title span {
+  color: #fff;
+  font-weight: 400;
+  line-height: 150%;
+}
+.services-our__desc {
+  color: #fff;
+  margin: 15px 0;
+  line-height: 150%;
+}
+.services-our__btn-red, .services-our__btn-white {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+.services-our__btn-red {
+  color: #fff;
+  background-color: #FF1A3B;
+}
+.services-our__btn-white {
+  color: #FF1A3B;
+  background-color: #fff;
+}
+
+.services-subtitle {
+  color: #fff;
+  font-weight: 400;
+}
+
 .popup {
   position: fixed;
   width: 100%;
@@ -318,25 +436,26 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
   opacity: 0;
+  transition: all 280ms ease 0ms;
 }
 .popup__show {
   visibility: visible;
   opacity: 1;
 }
 .popup-main {
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 480px;
-  height: 560px;
-  background: linear-gradient(180deg, #ffffff 0%, #efefef 100%);
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+  z-index: 200;
   display: flex;
   flex-direction: column;
-  transition: all 280ms ease 0ms;
+  width: 480px;
+  height: 560px;
   padding: 35px 19px 0 37px;
-  z-index: 200;
+  background: linear-gradient(180deg, #ffffff 0%, #efefef 100%);
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+  transform: translate(-50%, -50%);
+  transition: all 280ms ease 0ms;
 }
 .popup-main svg {
   z-index: 1;
@@ -410,5 +529,11 @@ a:hover {
   font-size: 16px;
   color: #fff;
   background-color: #FF1A3B;
+  border: 1px solid #FF1A3B;
   border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+.popup-main__btn:hover {
+  color: #FF1A3B;
+  background-color: transparent;
 }

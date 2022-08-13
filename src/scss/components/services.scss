@@ -1,0 +1,130 @@
+.our-services {
+  &__title,
+  &__link,
+  &__desc {
+    font-weight: 700;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $corbeauColor;
+    margin: 89px 0 74px;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      content: "";
+      width: 80px;
+      height: 5px;
+      background-color: $redColor;
+    }
+  }
+  &__items,
+  &__link,
+  &__item,
+  &__offer-list,
+  &__desc {
+    display: flex;
+  }
+
+  &__items {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  &__link {
+    justify-content: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $redColor;
+
+    &:hover {
+      color: $corbeauColor;
+    }
+  }
+  &__item {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 380px;
+    max-height: 284px;
+    padding: 25px 25px;
+    background-color: $white-smokeColor;
+  }
+  &__image {
+    max-width: 330px;
+    max-height: 166px;
+    margin-bottom: 14px;
+  }
+  &__desc {
+    width: 330px;
+    height: 54px;
+    line-height: 150%;
+    align-items: flex-end;
+    color: $corbeauColor;
+  }
+  &__offer-list {
+    padding-top: 60px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+}
+.services-our {
+  display: flex;
+
+  &__item-toyota {
+    max-width: 580px;
+    max-height: 370px;
+    padding: 35px 30px;
+    background-color: $corbeauColor;
+  }
+  &__item-motul {
+    max-width: 580px;
+    max-height: 370px;
+    padding: 35px 30px;
+    background-color: $redColor;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $whiteColor;
+    span {
+      color: $whiteColor;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+
+  &__desc {
+    color: $whiteColor;
+    margin: 15px 0;
+    line-height: 150%;
+  }
+  &__btn-red,
+  &__btn-white {
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  &__btn-red {
+    color: $whiteColor;
+    background-color: $redColor;
+  }
+  &__btn-white {
+    color: $redColor;
+    background-color: $whiteColor;
+  }
+}
+.services-subtitle {
+  color: $whiteColor;
+  font-weight: 400;
+}
